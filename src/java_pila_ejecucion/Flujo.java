@@ -4,7 +4,7 @@ public class Flujo {
 
 	public static void main(String[] args) {
 		System.out.println("Inicio main !!!");
-		metodo4();
+		//metodo4();
 		metodo1();
 		System.out.println("Fin main");
 	}
@@ -15,7 +15,7 @@ public class Flujo {
 		System.out.println("Fin metodo 1");
 	}
 
-	@SuppressWarnings("null")
+	
 	private static void metodo2() {
 		System.out.println("Inicio metodo 1!!!");
 		for (int i = 1; i <=5; i++) {
@@ -55,7 +55,7 @@ public class Flujo {
 		//System.out.println("Fin metodo 3!!!");
 	}
 	
-	public static void metodo4() {
+	public static void metodo4() throws Exception {
 		metodo4();		
 	}
 }
