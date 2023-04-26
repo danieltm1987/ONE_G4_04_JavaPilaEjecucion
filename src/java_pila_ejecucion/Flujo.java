@@ -4,6 +4,7 @@ public class Flujo {
 
 	public static void main(String[] args) {
 		System.out.println("Inicio main !!!");
+		metodo4();
 		metodo1();
 		System.out.println("Fin main");
 	}
@@ -52,5 +53,9 @@ public class Flujo {
 		System.out.println("Resultado :"+r);
 		throw new MyException("Mi exception fue lanzada");
 		//System.out.println("Fin metodo 3!!!");
+	}
+	
+	public static void metodo4() {
+		metodo4();		
 	}
 }
