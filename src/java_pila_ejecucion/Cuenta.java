@@ -16,6 +16,9 @@ public class Cuenta {
 		this.numero = numero;
 	}
 	
+	public void deposita() throws MyException2 {
+		
+	}
 	
 
 }
