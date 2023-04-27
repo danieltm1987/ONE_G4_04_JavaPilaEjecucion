@@ -4,19 +4,20 @@ public class TestConexion {
 
 	public static void main(String[] args) {
 		
-		Conexion con = new Conexion();
+		Conexion con = null;
+		
 		try {
+			con = new Conexion();
 			con.leerDatos();			
-		} catch (Exception e) {
+		} catch (IllegalStateException ex) {
 			System.out.println("Recibiendo Exception...");
-			e.printStackTrace();
+			ex.printStackTrace();
 		} finally {
 			System.out.println("Ejecutando Finally");
-			con.cerrar();
+			if(con!=null) {
+				con.cerrar();				
+			}
 		}
-				
-		
-
 	}
 
 }
